@@ -6,6 +6,8 @@ Goal: Build confidence with reusable components, props, lists, forms, effects, a
 
 Starter code is already included in this folder, so you can run it immediately.
 
+JavaScript note: if any syntax here feels unfamiliar, use Module 0 as your reference (`module-0-javascript-foundations`).
+
 ---
 
 ## Run The Starter Code
@@ -125,6 +127,7 @@ By the end, you should be able to:
 
 ## Prerequisites
 
+0. Complete Module 0 (`module-0-javascript-foundations`) first.
 1. Complete Module 1 first.
 2. Be comfortable running `npm install` and `npm run dev`.
 3. Know basic JavaScript arrays, functions, objects.
@@ -155,6 +158,14 @@ create-vite my-first-vite-react-app --template react
 
 ## 2-Hour Self-Study Plan
 
+Module 0 references for this plan (`module-0-javascript-foundations`):
+
+- 0:00-0:20 -> Arrays, objects, destructuring, template literals
+- 0:20-0:50 -> Functions, arrow functions, objects, destructuring
+- 0:50-1:20 -> Arrays (`map`), callbacks, event object (`event.target.value`), conditionals
+- 1:20-1:45 -> Async (`async/await`), `fetch`, `try/catch`, JSON
+- 1:45-2:00 -> Array and object update patterns with spread syntax
+
 ### 0:00-0:20 - JavaScript Warmup for React
 
 What to understand:
@@ -174,6 +185,8 @@ const products = [
 
 const names = products.map((p) => p.name)
 ```
+
+See Module 0: [Functions](../module-0-javascript-foundations/README.md#m0-functions), [Arrays](../module-0-javascript-foundations/README.md#m0-arrays), [Objects](../module-0-javascript-foundations/README.md#m0-objects), and [Template Literals](../module-0-javascript-foundations/README.md#m0-template-literals).
 
 ### 0:20-0:50 - Components + Props
 
@@ -195,6 +208,8 @@ export default function Card({ title, children }) {
   )
 }
 ```
+
+See Module 0: [Functions](../module-0-javascript-foundations/README.md#m0-functions), [Destructuring](../module-0-javascript-foundations/README.md#m0-destructuring), and [Import/Export modules](../module-0-javascript-foundations/README.md#m0-import-export).
 
 What this means:
 
@@ -222,6 +237,8 @@ export default function ProductList({ items, onDelete }) {
 }
 ```
 
+See Module 0: [Arrays](../module-0-javascript-foundations/README.md#m0-arrays), [Callbacks](../module-0-javascript-foundations/README.md#m0-callbacks), and [Spread syntax](../module-0-javascript-foundations/README.md#m0-spread).
+
 Controlled form in `App.jsx`:
 
 ```jsx
@@ -243,6 +260,8 @@ export default function App() {
   )
 }
 ```
+
+See Module 0: [Variables](../module-0-javascript-foundations/README.md#m0-variables), [Functions](../module-0-javascript-foundations/README.md#m0-functions), [Callbacks](../module-0-javascript-foundations/README.md#m0-callbacks), and [Event object basics](../module-0-javascript-foundations/README.md#m0-event-object).
 
 Important beginner note:
 
@@ -293,6 +312,8 @@ export default function App() {
   )
 }
 ```
+
+See Module 0: [Variables](../module-0-javascript-foundations/README.md#m0-variables), [Functions](../module-0-javascript-foundations/README.md#m0-functions), [Arrays](../module-0-javascript-foundations/README.md#m0-arrays), [Async JavaScript](../module-0-javascript-foundations/README.md#m0-async), and [JSON](../module-0-javascript-foundations/README.md#m0-json).
 
 Important beginner note:
 

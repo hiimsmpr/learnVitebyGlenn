@@ -6,6 +6,8 @@ Goal: Move from practice exercises to a small app that stores data and can be de
 
 Starter code is already included in this folder, so you can run it immediately.
 
+JavaScript note: this module uses many JS features. Review Module 0 anytime (`module-0-javascript-foundations`).
+
 ---
 
 ## Run The Starter Code
@@ -132,6 +134,7 @@ Term meanings used in this module:
 
 ## Prerequisites
 
+0. Complete Module 0 (`module-0-javascript-foundations`) first.
 1. Complete Module 1 and Module 2.
 2. Be comfortable with components, props, state, forms, and `useEffect`.
 3. Be able to run `npm install`, `npm run dev`, and `npm run build`.
@@ -139,6 +142,14 @@ Term meanings used in this module:
 ---
 
 ## 2-Hour Self-Study Plan
+
+Module 0 references for this plan (`module-0-javascript-foundations`):
+
+- 0:00-0:20 -> Objects, arrays, callbacks, function parameters
+- 0:20-1:00 -> CRUD logic with arrays (`map`, `filter`), conditionals, spread syntax
+- 1:00-1:30 -> JSON (`stringify`/`parse`), browser storage concepts, error handling
+- 1:30-1:50 -> Functions and reusable logic patterns
+- 1:50-2:00 -> Command-line basics and build workflow terms
 
 ### 0:00-0:20 - Data Flow Recap + Lifting State Up
 
@@ -188,6 +199,8 @@ useEffect(() => {
 }, [goals])
 ```
 
+See Module 0: [Async JavaScript](../module-0-javascript-foundations/README.md#m0-async), [JSON](../module-0-javascript-foundations/README.md#m0-json), and [Browser storage](../module-0-javascript-foundations/README.md#m0-local-storage).
+
 What this means:
 
 - `localStorage` stores small text data in the browser.
@@ -212,11 +225,15 @@ What this means:
 npm run build
 ```
 
+See Module 0: [Run This Module](../module-0-javascript-foundations/README.md#m0-run-commands) for command-line execution patterns.
+
 2. Preview production build:
 
 ```bash
 npm run preview
 ```
+
+See Module 0: [Run This Module](../module-0-javascript-foundations/README.md#m0-run-commands) for command-line execution patterns.
 
 3. Deploy (choose one):
 - Vercel

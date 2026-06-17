@@ -1,0 +1,14 @@
+{
+  "name": "module-0-javascript-foundations",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "run:01": "node examples/01-variables-functions.js",
+    "run:02": "node examples/02-arrays-objects.js",
+    "run:03": "node examples/03-callbacks-and-events.js",
+    "run:04": "node examples/04-async-fetch-json.js",
+    "run:05": "node examples/05-mini-task-manager.js",
+    "run:all": "npm run run:01 && npm run run:02 && npm run run:03 && npm run run:04 && npm run run:05"
+  }
+}

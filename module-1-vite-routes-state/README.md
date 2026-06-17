@@ -6,6 +6,8 @@ Goal: By the end of this module, you can create a React app with Vite, navigate 
 
 Starter code is already included in this folder, so you can run it immediately.
 
+JavaScript note: if any syntax here feels unfamiliar, study Module 0 first (`module-0-javascript-foundations`).
+
 ---
 
 ## Run The Starter Code
@@ -123,6 +125,7 @@ By the end, you should be able to:
 
 ## Prerequisites (Before Class)
 
+0. Complete Module 0 (`module-0-javascript-foundations`) first.
 1. Install Node.js LTS from the official website.
 2. Verify install:
 
@@ -159,6 +162,13 @@ create-vite my-first-vite-react-app --template react
 
 ## 2-Hour Self-Study Plan
 
+Module 0 references for this plan (`module-0-javascript-foundations`):
+
+- 0:00-0:20 -> Variables, functions, arrow functions, arrays, objects, import/export, template literals
+- 0:20-0:45 -> Functions, command arguments, modules (`import`/`export`)
+- 0:45-1:20 -> Functions, callbacks, event basics, objects
+- 1:20-1:50 -> Variables, function calls, callbacks, conditionals
+
 ### 0:00-0:20 - JavaScript + React Basics
 
 Understand these quick ideas first:
@@ -175,6 +185,8 @@ Mini example:
 const user = { name: 'Ari' }
 const greeting = `Hello, ${user.name}`
 ```
+
+See Module 0: [Arrays](../module-0-javascript-foundations/README.md#m0-arrays), [Objects](../module-0-javascript-foundations/README.md#m0-objects), and [Template Literals](../module-0-javascript-foundations/README.md#m0-template-literals).
 
 ### 0:20-0:45 - Install and Run Vite React App
 
@@ -249,6 +261,8 @@ export default function Home() {
 }
 ```
 
+See Module 0: [Functions](../module-0-javascript-foundations/README.md#m0-functions) and [Import/Export modules](../module-0-javascript-foundations/README.md#m0-import-export).
+
 Use router in `src/main.jsx`:
 
 ```jsx
@@ -265,6 +279,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>
 )
 ```
+
+See Module 0: [Import/Export modules](../module-0-javascript-foundations/README.md#m0-import-export) and [Functions](../module-0-javascript-foundations/README.md#m0-functions).
 
 What these new router parts do:
 
@@ -297,6 +313,8 @@ export default function App() {
 }
 ```
 
+See Module 0: [Functions](../module-0-javascript-foundations/README.md#m0-functions), [Callbacks](../module-0-javascript-foundations/README.md#m0-callbacks), and [Import/Export modules](../module-0-javascript-foundations/README.md#m0-import-export).
+
 What these router pieces mean:
 
 - `Link` creates in-app navigation links.
@@ -324,6 +342,8 @@ export default function Counter() {
   )
 }
 ```
+
+See Module 0: [Variables](../module-0-javascript-foundations/README.md#m0-variables), [Functions](../module-0-javascript-foundations/README.md#m0-functions), [Conditionals](../module-0-javascript-foundations/README.md#m0-conditionals), and [Callbacks](../module-0-javascript-foundations/README.md#m0-callbacks).
 
 What this means:
 

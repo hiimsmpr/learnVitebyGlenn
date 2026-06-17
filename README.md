@@ -1,7 +1,8 @@
 # React + Vite Teaching Modules
 
-This folder contains 4 separate beginner-friendly modules you can teach on different nights.
+This folder contains 5 separate beginner-friendly modules you can teach on different nights.
 
+- Module 0 is JavaScript foundations (non-React reference and practice).
 - Module 1 focuses on setup, routing, and state.
 - Module 2 focuses on components, effects, forms, API data, and app structure.
 - Module 3 focuses on CRUD workflows, localStorage persistence, custom hooks, and deployment.
@@ -15,12 +16,20 @@ Each module includes:
 
 ## How To Use This Folder
 
-1. Open one module folder at a time.
-2. Follow the README in that folder from top to bottom.
-3. Build while reading, then complete the homework.
+1. Start with Module 0 first.
+2. Open one module folder at a time.
+3. Follow the README in that folder from top to bottom.
+4. Build while reading, then complete the homework.
+
+## JavaScript Reference Rule
+
+If any React module introduces new JavaScript functionality, add it to Module 0.
+
+Module 0 is the single source of truth for JavaScript concepts used by the rest of this course.
 
 ## Module Folders
 
+- `module-0-javascript-foundations`
 - `module-1-vite-routes-state`
 - `module-2-react-core-skills`
 - `module-3-persist-and-ship`
@@ -29,7 +38,10 @@ Each module includes:
 If you want each module to be its own GitHub repo, initialize git inside each folder separately:
 
 ```bash
-cd module-1-vite-routes-state
+cd module-0-javascript-foundations
+git init
+
+cd ../module-1-vite-routes-state
 git init
 
 cd ../module-2-react-core-skills

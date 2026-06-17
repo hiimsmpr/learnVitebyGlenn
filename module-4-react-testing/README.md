@@ -6,6 +6,8 @@ Goal: Learn how to test React components so you can verify behavior with confide
 
 Starter code is already included in this folder, so you can run it immediately.
 
+JavaScript note: if core syntax feels unfamiliar, use Module 0 first (`module-0-javascript-foundations`).
+
 ---
 
 ## Run The Starter Code
@@ -106,6 +108,14 @@ In plain words:
 
 ## 2-Hour Self-Study Plan
 
+Module 0 references for this plan (`module-0-javascript-foundations`):
+
+- 0:00-0:20 -> Functions, conditionals, debugging basics
+- 0:20-0:50 -> Function calls, variables, assertion thinking
+- 0:50-1:20 -> Event-like behavior, callbacks, state-change reasoning
+- 1:20-1:45 -> Event object, string cleanup (`trim`), conditionals
+- 1:45-2:00 -> Command-line scripts and execution flow
+
 ### 0:00-0:20 - Testing Fundamentals
 
 Understand:
@@ -171,6 +181,8 @@ npm run test
 npm run test:watch
 npm run build
 ```
+
+See Module 0: [Run This Module](../module-0-javascript-foundations/README.md#m0-run-commands) for command-line execution patterns.
 
 Self-check questions:
 
