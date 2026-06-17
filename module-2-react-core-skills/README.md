@@ -4,7 +4,7 @@ Audience: Beginner (new to JavaScript and React)
 
 Goal: Build confidence with reusable components, props, lists, forms, effects, and fetching API data.
 
-Starter code is already included in this folder, so students can run it immediately.
+Starter code is already included in this folder, so you can run it immediately.
 
 ---
 
@@ -29,7 +29,7 @@ Open the local URL printed in terminal.
 
 ## Self-Study Mode (No Assumptions)
 
-Use this section if you are learning without an instructor.
+Use this section if you are learning on your own.
 
 ### Step 1: Install Tools (One Time)
 
@@ -98,7 +98,7 @@ Note: You usually run `npm install` only once for this project, unless dependenc
 
 ## Why This Module
 
-After students know setup/routes/state, the next important skills are:
+After you know setup/routes/state, the next important skills are:
 
 1. Breaking UI into reusable components
 2. Passing data with props
@@ -112,7 +112,7 @@ These are core skills they will use in almost every React project.
 
 ## Learning Outcomes
 
-By the end, students should be able to:
+By the end, you should be able to:
 
 1. Create and reuse components.
 2. Pass and read props.
@@ -201,6 +201,7 @@ What this means:
 - Props are inputs to a component, like function arguments.
 - Smaller components are easier to test, reuse, and debug.
 - `children` lets one component wrap and display nested content from another component.
+- A reusable component is like a template you can use multiple times with different props.
 
 ### 0:50-1:20 - Lists + Event Handling + Forms
 
@@ -243,10 +244,16 @@ export default function App() {
 }
 ```
 
+Important beginner note:
+
+- `onChange={(e) => setName(e.target.value)}` means: "when input text changes, save the new text into state."
+- `e` is the browser event object, and `e.target.value` is what the user typed.
+
 What this means:
 
 - A controlled input uses React state as the single source of truth for the field value.
 - `onChange` runs on each keystroke and updates state, keeping UI and data in sync.
+- `key={item.id}` helps React track each list item correctly when list data changes.
 
 ### 1:20-1:45 - `useEffect` + API Fetching
 
@@ -287,11 +294,18 @@ export default function App() {
 }
 ```
 
+Important beginner note:
+
+- `async/await` is a way to wait for data from the internet.
+- `fetch(...)` asks an API for data.
+- `response.json()` converts response text into JavaScript objects/arrays.
+
 What this means:
 
 - `useEffect` is used for side effects, such as fetching data from an API.
 - An empty dependency array `[]` runs the effect once when the component first appears.
 - Loading and error states prevent broken or confusing UI while data is being fetched.
+- If you fetch data directly in the component body (outside `useEffect`), it can run repeatedly and cause loops.
 
 ### 1:45-2:00 - Project Structure + Recap
 
@@ -302,7 +316,7 @@ Suggested beginner structure:
 - `src/hooks/` (later)
 - `src/services/` (API helpers, later)
 
-Recap questions:
+Self-check questions:
 
 1. Why do we split UI into components?
 2. Why must list items have `key`?
@@ -342,7 +356,7 @@ Stretch goals:
 
 ## Practice Checklist
 
-Before finishing this module, student should be able to:
+Before finishing this module, you should be able to:
 
 - Explain props in one sentence
 - Build a controlled input

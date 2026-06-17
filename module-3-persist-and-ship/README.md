@@ -4,7 +4,7 @@ Audience: Beginner (new to JavaScript and React)
 
 Goal: Move from practice exercises to a small app that stores data and can be deployed.
 
-Starter code is already included in this folder, so students can run it immediately.
+Starter code is already included in this folder, so you can run it immediately.
 
 ---
 
@@ -113,7 +113,7 @@ create-vite my-app --template react
 
 ## Learning Outcomes
 
-By the end, students should be able to:
+By the end, you should be able to:
 
 1. Explain lifting state up and when to do it.
 2. Build a small CRUD app (create, edit, delete).
@@ -121,6 +121,12 @@ By the end, students should be able to:
 4. Use `useEffect` for load/save side effects.
 5. Extract reusable logic into a custom hook.
 6. Build and deploy a React app.
+
+Term meanings used in this module:
+
+- CRUD = Create, Read, Update, Delete (the 4 common actions in data apps).
+- Persist = keep data saved so it is still there after refresh/restart.
+- Deploy = publish your app to the internet so others can open it by URL.
 
 ---
 
@@ -132,14 +138,15 @@ By the end, students should be able to:
 
 ---
 
-## 2-Hour Teaching Plan
+## 2-Hour Self-Study Plan
 
 ### 0:00-0:20 - Data Flow Recap + Lifting State Up
 
-Teach:
+What this means:
 
 - Keep shared state in the nearest common parent component.
 - Child components receive data and callback functions via props.
+- "Lifting state up" means moving state from a child into a parent so multiple children can use the same data.
 
 Mini talking point:
 
@@ -156,9 +163,14 @@ Build app features:
 
 Use one parent (`App.jsx`) to hold list state and pass handlers into child components.
 
+In plain words:
+
+- The parent stores the main data.
+- Child components display data and ask parent to update it using callback functions.
+
 ### 1:00-1:30 - Persist Data with localStorage
 
-Teach two key effects:
+Focus on two key effects:
 
 1. Load once on first mount
 2. Save whenever goals change
@@ -176,14 +188,21 @@ useEffect(() => {
 }, [goals])
 ```
 
+What this means:
+
+- `localStorage` stores small text data in the browser.
+- `JSON.stringify` turns JavaScript data into text to save.
+- `JSON.parse` turns saved text back into JavaScript data.
+
 ### 1:30-1:50 - Extract a Custom Hook
 
 Move persistence logic into `useLocalStorageState` hook so `App.jsx` is simpler.
 
-Teach:
+What this means:
 
 - Hooks let us reuse stateful logic.
 - Naming convention starts with `use`.
+- A custom hook is just a reusable function that uses React hooks inside it.
 
 ### 1:50-2:00 - Build + Deploy + Recap
 
@@ -203,7 +222,13 @@ npm run preview
 - Vercel
 - Netlify
 
-Recap questions:
+Deploy in plain words:
+
+- Connect your GitHub repo to Vercel or Netlify.
+- Click deploy.
+- You receive a public URL to share.
+
+Self-check questions:
 
 1. Why lift state up?
 2. Why use two effects for localStorage pattern?

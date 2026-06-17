@@ -2,9 +2,9 @@
 
 Audience: Beginner (new to JavaScript and React)
 
-Goal: By the end of this module, students can create a React app with Vite, navigate between pages, and manage local component state.
+Goal: By the end of this module, you can create a React app with Vite, navigate between pages, and manage local component state.
 
-Starter code is already included in this folder, so students can run it immediately.
+Starter code is already included in this folder, so you can run it immediately.
 
 ---
 
@@ -111,7 +111,7 @@ You do not need to run `npm install` every day. Run it again only if `package.js
 
 ## Learning Outcomes
 
-By the end, students should be able to:
+By the end, you should be able to:
 
 1. Explain what Vite and React each do.
 2. Create and run a React app with Vite.
@@ -157,17 +157,17 @@ create-vite my-first-vite-react-app --template react
 
 ---
 
-## 2-Hour Teaching Plan
+## 2-Hour Self-Study Plan
 
 ### 0:00-0:20 - JavaScript + React Basics
 
-Teach these quick ideas first:
+Understand these quick ideas first:
 
-- Variables: `let`, `const`
-- Functions and arrow functions
-- Arrays and objects
-- Import/export basics
-- JSX means writing HTML-like syntax in JavaScript
+- Variables: `let` creates a value you can reassign later, while `const` creates a value that should not be reassigned.
+- Functions and arrow functions: both are reusable blocks of code; arrow functions are a shorter syntax often used in React.
+- Arrays and objects: arrays store ordered lists, while objects store named properties (key/value pairs).
+- Import/export basics: `export` shares code from one file, and `import` brings that code into another file.
+- JSX: lets you write HTML-like UI code inside JavaScript, which React turns into real browser elements.
 
 Mini example:
 
@@ -184,6 +184,12 @@ const greeting = `Hello, ${user.name}`
 npm create vite@latest my-first-vite-react-app -- --template react
 ```
 
+What this command means:
+
+- `npm create vite@latest` runs Vite's project generator.
+- `my-first-vite-react-app` is the new folder name.
+- `--template react` tells it to create a React project.
+
 2. Move in and install:
 
 ```bash
@@ -191,19 +197,35 @@ cd my-first-vite-react-app
 npm install
 ```
 
+What this does:
+
+- `cd ...` moves your terminal into the new project folder.
+- `npm install` downloads all required packages listed in `package.json`.
+
 3. Run dev server:
 
 ```bash
 npm run dev
 ```
 
+What this does:
+
+- Starts a local development server on your computer.
+- Lets you see your app in the browser while you code.
+
 4. Open the local URL shown in terminal.
 
-Explain what each file does:
+What each file does:
 
 - `index.html`: app entry page
 - `src/main.jsx`: React app bootstrap
 - `src/App.jsx`: first root component
+
+In plain words:
+
+- `index.html` is the page the browser first loads.
+- `src/main.jsx` tells React where to render the app on that page.
+- `src/App.jsx` is your main UI component where most beginner work starts.
 
 ### 0:45-1:20 - Add Routes (Pages)
 
@@ -244,6 +266,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 ```
 
+What these new router parts do:
+
+- `BrowserRouter` turns on page-like navigation without full reloads.
+- It watches the URL and tells React which screen to show.
+
 Use routes and links in `src/App.jsx`:
 
 ```jsx
@@ -270,6 +297,12 @@ export default function App() {
 }
 ```
 
+What these router pieces mean:
+
+- `Link` creates in-app navigation links.
+- `Routes` is a container that checks the current URL.
+- `Route` connects one URL path to one component.
+
 ### 1:20-1:50 - State with `useState`
 
 In `src/pages/Counter.jsx`:
@@ -292,15 +325,16 @@ export default function Counter() {
 }
 ```
 
-Explain:
+What this means:
 
 - `count` = current value
 - `setCount` = function to update it
 - When state changes, React re-renders UI
+- Re-render means React redraws the component with updated values.
 
 ### 1:50-2:00 - Recap + Q/A
 
-Ask students:
+Self-check questions:
 
 1. What is Vite solving?
 2. Why use routes?

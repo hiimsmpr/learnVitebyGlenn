@@ -2,9 +2,9 @@
 
 Audience: Beginner (new to JavaScript and React)
 
-Goal: Learn how to test React components so students can verify behavior with confidence.
+Goal: Learn how to test React components so you can verify behavior with confidence.
 
-Starter code is already included in this folder, so students can run it immediately.
+Starter code is already included in this folder, so you can run it immediately.
 
 ---
 
@@ -77,7 +77,7 @@ Press Control + C in each terminal where a process is running.
 
 ## Learning Outcomes
 
-By the end, students should be able to:
+By the end, you should be able to:
 
 1. Explain why tests help prevent regressions.
 2. Distinguish unit tests vs integration tests (basic level).
@@ -95,17 +95,30 @@ By the end, students should be able to:
 - user-event (simulate real user interactions)
 - jsdom (browser-like environment for tests)
 
+In plain words:
+
+- A test runner executes your test files and reports pass/fail.
+- React Testing Library helps you test what the user sees and does.
+- `user-event` simulates real user actions like typing and clicking.
+- `jsdom` provides a fake browser environment for tests in Node.js.
+
 ---
 
-## 2-Hour Teaching Plan
+## 2-Hour Self-Study Plan
 
 ### 0:00-0:20 - Testing Fundamentals
 
-Cover:
+Understand:
 
 - What a test is
 - Why manual-only testing is risky
 - Red/green cycle (fail first, then pass)
+
+In plain words:
+
+- A test is a small script that checks one expected behavior.
+- Manual testing can miss bugs because humans forget steps.
+- Red/green means: write a failing test first, then write code until it passes.
 
 Key language:
 
@@ -113,11 +126,17 @@ Key language:
 - Act: interact with component
 - Assert: verify outcome
 
+Quick example:
+
+- Arrange: render `<TaskCounter />`
+- Act: click `Increase`
+- Assert: expect count text to be `1`
+
 ### 0:20-0:50 - First Component Test
 
 Use `TaskCounter` component.
 
-Teach:
+What to do:
 
 1. Render component in test
 2. Find elements by role or text
@@ -125,7 +144,7 @@ Teach:
 
 ### 0:50-1:20 - Interaction Tests
 
-Teach with clicks:
+Practice with clicks:
 
 1. Click increment button
 2. Assert count updates
@@ -136,7 +155,7 @@ Teach with clicks:
 
 Use `TaskForm` component.
 
-Teach:
+What to do:
 
 1. Type in input
 2. Submit form
@@ -153,11 +172,17 @@ npm run test:watch
 npm run build
 ```
 
-Recap questions:
+Self-check questions:
 
 1. Why test user behavior instead of implementation details?
 2. Why use `getByRole` when possible?
 3. What should each test verify?
+
+Helpful answers:
+
+- Test behavior the user can observe, not internal implementation details.
+- Use `getByRole` because it mirrors accessibility and real usage.
+- One test should focus on one clear behavior.
 
 ---
 
@@ -209,9 +234,9 @@ Stretch goals:
 
 ---
 
-## Instructor Answer Key (Plain English)
+## Answer Key (Plain English)
 
-Use this when students ask, "What is this test actually proving?"
+Use this when you want to check what each test is actually proving.
 
 ### TaskCounter Tests
 
@@ -238,17 +263,17 @@ Use this when students ask, "What is this test actually proving?"
 - Proves basic validation prevents empty submissions.
 - Why it matters: avoids bad data entering app state.
 
-### Instructor Talking Script (Quick)
+### Quick Explanation Script
 
 1. "This test checks first render defaults."
 2. "This test checks behavior after a user action."
 3. "This test checks validation or edge cases."
 
-If students can explain those 3 types, they understand test purpose at a beginner level.
+If you can explain those 3 types, you understand test purpose at a beginner level.
 
 ### Optional Challenge Answers
 
-If students add delete/toggle features in homework, expected tests should prove:
+If you add delete/toggle features in homework, expected tests should prove:
 
 1. Item appears after submit.
 2. Item is removed after clicking delete.
@@ -284,3 +309,9 @@ Use this at the end of class. Mix multiple choice and short answer.
 8. So tests are reliable regardless of execution order.
 9. It provides a browser-like DOM environment for tests in Node.
 10. The jest-dom matcher setup import is missing (for example in `src/test-setup.js`).
+
+Scoring suggestion:
+
+- 9-10 correct: ready to write tests independently.
+- 7-8 correct: good base, review query methods and assertions.
+- 6 or fewer: repeat the first two time blocks and re-run sample tests.
