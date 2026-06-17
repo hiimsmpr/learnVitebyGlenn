@@ -1,0 +1,90 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d2433;
+  background: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+
+.layout {
+  width: min(900px, 100%);
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d4def1;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(13, 49, 99, 0.12);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.grow {
+  flex: 1;
+}
+
+.stats {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.goal-list {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.goal-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  border-bottom: 1px solid #e6ecf8;
+  padding-bottom: 0.6rem;
+}
+
+.goal-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #6a7485;
+}
+
+input {
+  border: 1px solid #b8c7e5;
+  border-radius: 8px;
+  padding: 0.55rem;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  background: #124da0;
+  color: white;
+  cursor: pointer;
+}
