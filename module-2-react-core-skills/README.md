@@ -153,16 +153,16 @@ create-vite my-first-vite-react-app --template react
 
 ---
 
-## 2-Hour Teaching Plan
+## 2-Hour Self-Study Plan
 
 ### 0:00-0:20 - JavaScript Warmup for React
 
-Review:
+What to understand:
 
-- Array `.map()`
-- Object properties
-- Destructuring
-- Template literals
+- Array `.map()`: transforms each item in an array into a new value.
+- Object properties: store related values in key/value format (example: `{ id: 1, name: 'Pen' }`).
+- Destructuring: pulls values out of objects or arrays into variables.
+- Template literals: create strings with variables using backticks and `${value}`.
 
 Example:
 
@@ -196,11 +196,11 @@ export default function Card({ title, children }) {
 }
 ```
 
-Teach:
+What this means:
 
-- Props are inputs to a component
-- Components should be small and focused
-- `children` lets you nest content
+- Props are inputs to a component, like function arguments.
+- Smaller components are easier to test, reuse, and debug.
+- `children` lets one component wrap and display nested content from another component.
 
 ### 0:50-1:20 - Lists + Event Handling + Forms
 
@@ -243,10 +243,10 @@ export default function App() {
 }
 ```
 
-Teach:
+What this means:
 
-- Controlled input means React state is the source of truth
-- `onChange` updates state on each keystroke
+- A controlled input uses React state as the single source of truth for the field value.
+- `onChange` runs on each keystroke and updates state, keeping UI and data in sync.
 
 ### 1:20-1:45 - `useEffect` + API Fetching
 
@@ -287,11 +287,11 @@ export default function App() {
 }
 ```
 
-Teach:
+What this means:
 
-- `useEffect` runs side effects (like network requests)
-- Empty dependency array `[]` means run once on mount
-- Always handle loading and error states
+- `useEffect` is used for side effects, such as fetching data from an API.
+- An empty dependency array `[]` runs the effect once when the component first appears.
+- Loading and error states prevent broken or confusing UI while data is being fetched.
 
 ### 1:45-2:00 - Project Structure + Recap
 
