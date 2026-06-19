@@ -39,12 +39,29 @@ Use this if you are learning on your own.
 2. Install VS Code from https://code.visualstudio.com
 3. Restart your computer
 
+Windows PC notes:
+
+1. Use default Node.js installer options to add Node/npm to PATH.
+2. Open PowerShell and run:
+
+```bash
+node -v
+npm -v
+```
+
+3. If both commands print versions, setup is complete.
+
 ### Step 2: Open the Correct Folder
 
 1. Open VS Code.
 2. Click File > Open Folder.
 3. Select `module-3-persist-and-ship`.
 4. Open Terminal in VS Code from Terminal > New Terminal.
+
+Windows PC notes:
+
+1. Use PowerShell terminal in VS Code.
+2. Change terminal profile if needed from the dropdown menu.
 
 ### Step 3: Check Installation
 

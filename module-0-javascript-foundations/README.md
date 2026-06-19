@@ -53,12 +53,29 @@ What these commands do:
 2. Install VS Code from https://code.visualstudio.com
 3. Restart your computer
 
+Windows PC notes:
+
+1. During Node.js install, keep the default options so Node and npm are added to PATH.
+2. After restart, open PowerShell and run:
+
+```bash
+node -v
+npm -v
+```
+
+3. If versions print, setup is correct.
+
 ### Step 2: Open Folder and Terminal
 
 1. Open VS Code
 2. File > Open Folder
 3. Select `module-0-javascript-foundations`
 4. Terminal > New Terminal
+
+Windows PC notes:
+
+1. PowerShell is recommended for this course.
+2. If a command fails in one terminal, try running it in PowerShell.
 
 ### Step 3: Verify Setup
 

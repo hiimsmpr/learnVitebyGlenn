@@ -31,12 +31,29 @@ Open the local URL shown in terminal.
 2. Install VS Code from https://code.visualstudio.com
 3. Restart computer
 
+Windows PC notes:
+
+1. Use default Node.js options so Node/npm are added to PATH.
+2. Open PowerShell and run:
+
+```bash
+node -v
+npm -v
+```
+
+3. Continue after both commands print version numbers.
+
 ### Step 2: Open folder
 
 1. Open VS Code
 2. File > Open Folder
 3. Select `module-5-ui-styling-libraries`
 4. Terminal > New Terminal
+
+Windows PC notes:
+
+1. Use PowerShell terminal in VS Code.
+2. If needed, switch terminal profile from the dropdown.
 
 ### Step 3: Verify setup
 

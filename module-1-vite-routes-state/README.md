@@ -39,6 +39,18 @@ Use this section if you are learning alone and only know basic computer use.
 2. Install VS Code from https://code.visualstudio.com
 3. Restart your computer after install (helps PATH update on some systems)
 
+Windows PC notes:
+
+1. During Node.js setup, keep defaults so Node/npm are added to PATH.
+2. After restart, open PowerShell and run:
+
+```bash
+node -v
+npm -v
+```
+
+3. If both show versions, your PC install is ready.
+
 ### Step 2: Open This Project Folder
 
 1. Open VS Code.
@@ -46,6 +58,11 @@ Use this section if you are learning alone and only know basic computer use.
 3. Choose this folder: `module-1-vite-routes-state`.
 4. Open Terminal in VS Code:
   - Top menu: Terminal > New Terminal
+
+Windows PC notes:
+
+1. Use PowerShell in VS Code terminal.
+2. If needed, click terminal dropdown and choose PowerShell.
 
 ### Step 3: Confirm Node and npm Work
 
@@ -320,6 +337,10 @@ What these router pieces mean:
 - `Link` creates in-app navigation links.
 - `Routes` is a container that checks the current URL.
 - `Route` connects one URL path to one component.
+
+Next step for component structure:
+
+- In Module 2, see the Components + Props section for a React component hierarchy diagram.
 
 ### 1:20-1:50 - State with `useState`
 

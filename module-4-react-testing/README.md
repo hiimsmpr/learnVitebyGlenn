@@ -37,12 +37,29 @@ Open the local URL printed in terminal.
 2. Install VS Code from https://code.visualstudio.com
 3. Restart your computer
 
+Windows PC notes:
+
+1. Keep Node.js installer defaults so npm is configured automatically.
+2. Open PowerShell and run:
+
+```bash
+node -v
+npm -v
+```
+
+3. Move to Step 2 only when both versions appear.
+
 ### Step 2: Open This Folder
 
 1. Open VS Code
 2. File > Open Folder
 3. Choose `module-4-react-testing`
 4. Open terminal: Terminal > New Terminal
+
+Windows PC notes:
+
+1. Prefer PowerShell terminal for these commands.
+2. Switch terminal profile to PowerShell if needed.
 
 ### Step 3: Verify Node and npm
 

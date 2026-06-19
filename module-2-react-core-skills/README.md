@@ -39,6 +39,18 @@ Use this section if you are learning on your own.
 2. Install VS Code from https://code.visualstudio.com
 3. Restart your computer after install
 
+Windows PC notes:
+
+1. Keep Node.js installer defaults so Node/npm are added to PATH.
+2. Open PowerShell and run:
+
+```bash
+node -v
+npm -v
+```
+
+3. Continue only after both commands print versions.
+
 ### Step 2: Open This Project Folder
 
 1. Open VS Code.
@@ -46,6 +58,11 @@ Use this section if you are learning on your own.
 3. Select `module-2-react-core-skills`.
 4. Open Terminal in VS Code:
   - Terminal > New Terminal
+
+Windows PC notes:
+
+1. Prefer PowerShell terminal in VS Code.
+2. If terminal is not PowerShell, switch from the terminal dropdown.
 
 ### Step 3: Verify Node and npm
 
@@ -196,6 +213,58 @@ Suggested structure:
 - `src/components/Card.jsx`
 - `src/components/ProductList.jsx`
 
+React component hierarchy (how components connect):
+
+```mermaid
+graph TD
+  App[App]
+  Header[Header]
+  CardA[Card: Product Form]
+  CardB[Card: Product List]
+  ProductForm[AddProductForm]
+  ProductList[ProductList]
+
+  App --> Header
+  App --> CardA
+  App --> CardB
+  CardA --> ProductForm
+  CardB --> ProductList
+```
+
+How to read this diagram:
+
+- `App` is the parent component at the top.
+- `Header`, `Card`, `AddProductForm`, and `ProductList` are child components.
+- Data usually lives in the parent (`App`) and is passed down as props.
+- User actions in children call parent callback props to request updates.
+
+Real starter-code hierarchy in this repo (`src/App.jsx`):
+
+```mermaid
+graph TD
+  App[App]
+  Header[Header]
+  CardTopics[Card: Study Topics]
+  AddTopicForm[AddTopicForm]
+  TopicList[TopicList]
+  CardUsers[Card: Users from API]
+  ApiUsers[ApiUsers]
+
+  App --> Header
+  App --> CardTopics
+  CardTopics --> AddTopicForm
+  CardTopics --> TopicList
+  App --> CardUsers
+  CardUsers --> ApiUsers
+```
+
+How data moves in the starter code:
+
+- `App` owns `topics` state and passes it to `TopicList`.
+- `App` passes `handleAddTopic` to `AddTopicForm` through `onAddTopic`.
+- `App` passes `handleDeleteTopic` to `TopicList` through `onDeleteTopic`.
+- `App` owns API state (`users`, `loadingUsers`, `userError`) and passes it to `ApiUsers`.
+
 `Card.jsx` example:
 
 ```jsx
@@ -325,8 +394,25 @@ What this means:
 
 - `useEffect` is used for side effects, such as fetching data from an API.
 - An empty dependency array `[]` runs the effect once when the component first appears.
+- If you put state values in the dependency array (example: `[searchText]`), the effect runs again whenever that state value changes.
 - Loading and error states prevent broken or confusing UI while data is being fetched.
 - If you fetch data directly in the component body (outside `useEffect`), it can run repeatedly and cause loops.
+
+Quick dependency examples:
+
+```jsx
+// Run once on mount
+useEffect(() => {
+  console.log('Run once')
+}, [])
+
+// Run whenever searchText changes
+useEffect(() => {
+  console.log('Run when searchText changes:', searchText)
+}, [searchText])
+```
+
+See Module 0: [Variables](../module-0-javascript-foundations/README.md#m0-variables), [Functions](../module-0-javascript-foundations/README.md#m0-functions), and [Conditionals](../module-0-javascript-foundations/README.md#m0-conditionals).
 
 ### 1:45-2:00 - Project Structure + Recap
 
